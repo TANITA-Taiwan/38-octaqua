@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OCTAQUA 腳腳者上線｜TANITA 第 38 屆產學合作</title>
+<meta name="description" content="TANITA × 中國文化大學廣告學系第 38 屆產學合作成果紀錄：跟著 YOTA 一站一站，為健康之樹蒐集腳點能量。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700;900&display=swap" rel="stylesheet">
+<!-- 標題與數字用的像素字體 -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- 這個檔案不需要修改。文字與張數請改 config.js，圖片請放進 images/ -->
+</head>
+<body>
+
+<header class="nav" id="top">
+  <a class="nav__brand" href="#top" aria-label="回到最上面" id="nav-logos"></a>
+  <nav class="nav__links" aria-label="頁面章節">
+    <a href="#about">主題</a>
+    <a href="#product">產品</a>
+    <a href="#story">世界觀</a>
+    <a href="#members">成員</a>
+    <a href="#yota">YOTA</a>
+    <a href="#map">活動地圖</a>
+    <a href="#records">活動紀錄</a>
+    <a href="#more">延伸閱讀</a>
+    <a href="#donee">受贈單位</a>
+  </nav>
+</header>
+
+<main>
+  <!-- 首圖：主視覺 -->
+  <section class="hero" aria-label="主視覺">
+    <div class="hero__frame" id="hero-frame">
+      <div class="hero__fallback" id="hero-fallback">
+        <p class="hero__school" id="hero-school"></p>
+        <h1 class="hero__title" id="hero-title"></h1>
+      </div>
+    </div>
+    <div class="wrap hero__strip">
+      <div class="hero__bar" id="hero-bar"></div>
+      <p class="hero__msg" id="hero-msg"></p>
+      <a class="btn" href="#map">Let’s TRY</a>
+    </div>
+  </section>
+
+  <!-- 主題介紹 -->
+  <section class="section about" id="about">
+    <div class="wrap about__grid">
+      <div>
+        <h2 class="about__heading" id="about-heading"></h2>
+        <dl class="about__points" id="about-points"></dl>
+      </div>
+      <div class="about__body" id="about-body"></div>
+    </div>
+    <div class="wrap">
+      <div class="panel energy" id="energy"></div>
+    </div>
+  </section>
+
+  <!-- BC-775 產品介紹 -->
+  <section class="section product" id="product">
+    <div class="wrap">
+      <h2 class="section__title">認識新道具 BC-775</h2>
+      <div class="panel panel--pink item" id="item"></div>
+      <div class="panel skill" id="skill"></div>
+      <div class="scan" id="scan"></div>
+    </div>
+  </section>
+
+  <!-- 世界觀 -->
+  <section class="section story" id="story">
+    <div class="wrap">
+      <h2 class="section__title" id="story-heading"></h2>
+      <ol class="story__panels" id="story-panels"></ol>
+      <div class="story__roles" id="story-roles"></div>
+      <ol class="story__steps" id="story-steps" aria-label="遊戲流程"></ol>
+    </div>
+  </section>
+
+  <!-- 成員 -->
+  <section class="section members" id="members">
+    <div class="wrap">
+      <h2 class="section__title">8 位守護者</h2>
+      <ul class="members__grid" id="members-grid"></ul>
+      <p class="members__advisors" id="advisors"></p>
+    </div>
+  </section>
+
+  <!-- 吉祥物 -->
+  <section class="section yota" id="yota">
+    <div class="wrap">
+      <div class="panel panel--pink yota__panel">
+        <span class="tag">NEW CHARACTER</span>
+        <div class="yota__art" id="yota-art"></div>
+        <div class="yota__copy">
+          <h2 class="yota__name" id="yota-name"></h2>
+          <p class="yota__intro" id="yota-intro"></p>
+          <dl class="yota__facts" id="yota-facts"></dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 活動地圖與進度 -->
+  <section class="section map" id="map">
+    <div class="wrap">
+      <h2 class="section__title">活動地圖</h2>
+      <div class="map__grid">
+        <div class="map__stage" id="map-stage">
+          <svg id="map-svg" role="img" aria-label="7 站活動的階梯地圖，由下往上" shape-rendering="crispEdges"></svg>
+        </div>
+        <aside class="map__side">
+          <div class="panel progress" aria-live="polite">
+            <p class="progress__pct"><span class="js-pct">0</span><small>%</small></p>
+            <div class="pbar" id="map-bar"></div>
+            <p class="progress__status" id="status"></p>
+            <p class="progress__today" id="today"></p>
+            <button class="btn btn--ghost" type="button" id="replay">重播路線</button>
+          </div>
+          <ol class="stops" id="stops"></ol>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 活動紀錄 -->
+  <section class="section records" id="records">
+    <div class="wrap">
+      <h2 class="section__title">活動紀錄</h2>
+      <div id="events"></div>
+    </div>
+  </section>
+
+  <!-- 延伸閱讀 -->
+  <section class="section more" id="more">
+    <div class="wrap">
+      <h2 class="section__title" id="more-heading"></h2>
+      <div class="more__articles" id="more-articles"></div>
+      <div class="more__row">
+        <div class="panel more__video" id="more-video"></div>
+        <a class="panel panel--pink more__product" id="more-product" target="_blank" rel="noopener"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 受贈單位 -->
+  <section class="section donee" id="donee">
+    <div class="wrap"><div class="panel panel--lime donee__panel" id="donee-panel"></div></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__row">
+    <p id="footer-text"></p>
+    <a id="footer-link" href="#" target="_blank" rel="noopener">TANITA Taiwan 官網</a>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="照片放大檢視">
+  <button class="lightbox__btn lightbox__close" type="button" id="lb-close" aria-label="關閉">✕</button>
+  <button class="lightbox__btn lightbox__prev" type="button" id="lb-prev" aria-label="上一張">‹</button>
+  <img id="lb-img" alt="">
+  <button class="lightbox__btn lightbox__next" type="button" id="lb-next" aria-label="下一張">›</button>
+  <p class="lightbox__count" id="lb-count"></p>
+</dialog>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

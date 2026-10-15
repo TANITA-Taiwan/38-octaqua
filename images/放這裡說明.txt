@@ -1,0 +1,4 @@
+這個 images 資料夾的內容，會被網站讀取。
+根目錄放：banner.jpg（首圖橫式 2400x1070）、banner-m.jpg（首圖直式 1600x2000）、
+logo-tanita.png、logo-octaqua.png、logo-ofo.png（透明背景 PNG）。
+檔名需完全一致（含大小寫與副檔名）。

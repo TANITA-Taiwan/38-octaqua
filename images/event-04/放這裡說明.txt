@@ -1,0 +1,3 @@
+第 4 站：花之國
+放：01.jpg、02.jpg……（30 到 50 張，長邊約 1800px、每張 500KB 以下）、video.mp4（直式、25MB 以下）、poster.jpg（影片封面）。
+上傳後，到 config.js 把該站的 photos 改成實際張數。

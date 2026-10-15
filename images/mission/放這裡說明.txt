@@ -1,0 +1,1 @@
+長老村任務：放 01.jpg……、video.mp4、poster.jpg。到 config.js 的 mission 填 photos 張數。
