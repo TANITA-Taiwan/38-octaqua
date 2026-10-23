@@ -153,7 +153,7 @@ window.SITE = {
       date: "2026.10.09 – 10.11", place: "台北松菸誠品戶外大廣場", address: "台北市信義區菸廠路 88 號",
       summary: "活動結束後，請在這裡寫下這一站的實際內容與成果。",
       goal: "",
-      done: false, photos: 1 },
+      done: false, photos: 0 },
     { id: "event-02", start: "2026-10-24", end: "2026-10-24", chapter: "第二章", name: "水之國：腳點榮譽登陸戰", short: "水之國",
       event: "淡江大橋路跑活動",
       date: "2026.10.24", place: "淡水漁人碼頭舞台", address: "新北市淡水區觀海路",
