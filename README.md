@@ -17,7 +17,6 @@
 | 標誌 | `images/logo-tanita.png`、`images/logo-octaqua.png` | 透明背景 PNG |
 | 產品照 | `images/product/bc775.jpg` | 方形 1200×1200，背景乾淨或透明（目前放的是從主視覺裁下來的暫用圖，建議換成官方產品照） |
 | 世界觀漫畫格 | `images/story/01.jpg` 到 `03.jpg` | 橫式 1600×1000 |
-| 成員 | `images/members/01.jpg` 到 `08.jpg` | 方形 800×800 |
 | 地圖最終章小圖（像素版 BC-775） | `images/map/final.png` | 透明背景 PNG 256×256；沒放時顯示預設小圖示 |
 | YOTA 介紹圖 | `images/yota/main.png` | 透明背景 PNG 1200×1200 |
 | YOTA 地圖小圖 | `images/yota/marker.png` | 透明背景 PNG 256×256，直接用同名檔案覆蓋就會換掉地圖上的 YOTA |
@@ -37,7 +36,6 @@
 
 ## 其他要更新的地方
 - 腳點能量：`config.js` 的 `energy.current`，填目前累積的腳點數（每 15,000 腳點捐 10 台 BC-775）。
-- 成員一句話介紹：`members` 的 `quote`。
 - YOTA 與世界觀文字：`yota`、`story`。
 - 產品介紹（裝備資訊、腳點 3 階段、10 項數據）：`product`。
 

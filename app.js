@@ -175,7 +175,7 @@
   }
 
   /* ============================================================
-     主題、能量、世界觀、成員、YOTA
+     主題、能量、世界觀、YOTA
      ============================================================ */
   $('about-heading').textContent = S.intro.heading;
   S.intro.paragraphs.forEach(function (t) { $('about-body').appendChild(h('p', { text: t })); });
@@ -307,16 +307,6 @@
     $('story-roles').appendChild(h('p', { 'class': 'panel panel--lime story__role' }, h('b', { text: r.who }), r.what));
   });
   S.story.steps.forEach(function (t) { $('story-steps').appendChild(h('li', { text: t })); });
-
-  S.members.forEach(function (m, i) {
-    $('members-grid').appendChild(h('li', { 'class': 'member panel' },
-      h('div', { 'class': 'member__photo' }, slotImg('images/members/' + pad2(i + 1) + '.jpg', m.name, '成員照', '方形・800×800')),
-      h('p', { 'class': 'member__name', text: m.name }),
-      h('p', { 'class': 'member__role', text: m.role }),
-      h('p', { 'class': 'member__quote', text: m.quote })
-    ));
-  });
-  $('advisors').textContent = '指導老師：' + S.advisors.join('、');
 
   var Y = S.yota;
   $('yota-art').appendChild(slotImg(Y.image, Y.name, 'YOTA 介紹圖', '透明背景 PNG・1200×1200'));
