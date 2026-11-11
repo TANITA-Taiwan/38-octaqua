@@ -79,7 +79,7 @@ window.SITE = {
      current：目前累積的腳點數，之後請從現場統計更新這個數字 */
   energy: {
     heading: "腳點能量解鎖計畫",
-    current: 27562,
+    current: 28564,
     target: 100000,
     unit: "腳點",
     note: "全活動每累計達 1,500 腳點，TANITA 即捐贈 1 台 BC-775 體組成計至財團法人老五老基金會。"
